@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	hydian.local. root.hydian.local. (
+			      5		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.hydian.local.
+200.1.168	IN	PTR	ns1.hydian.local.
+210.1.168	IN	PTR	bespin.hydian.local.
+
